@@ -27,4 +27,27 @@ public class Dealership {
     public void removeVehicle(Vehicle vehicle) {
         inventory.remove(vehicle);
     }
+    //Search methods
+    public List<Vehicle> getAllVehicles() {
+        return inventory;
+    }
+    public List<Vehicle> getVehiclesByPrice(double min, double max) {
+        return null;
+    }
+    public List<Vehicle> getVehiclesByMakeModel(String make, String model) {
+        return null;
+    }
+    public List<Vehicle> getVehiclesByYear(int min, int max) {
+        return null;
+    }
+    public List<Vehicle> getVehiclesByColor(String color) {
+        return null;
+    }
+    public List<Vehicle> getVehiclesByMileage(int min, int max) {
+        return null;
+    }
+    public List<Vehicle> getVehiclesByType(String vehicleType) {
+        return null;
+    }
+
 }
