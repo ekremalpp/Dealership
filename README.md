@@ -15,8 +15,8 @@ from a dealership.csv file.
 
 - As a user, I want to filter vehicles by price, make, or model so that I can easily find options that fit my budget and preferences.
 
-As a user, I want to add new vehicles to the inventory so that I can keep the dealership up to date with the latest offerings.
-- 
+- As a user, I want to add new vehicles to the inventory so that I can keep the dealership up to date with the latest offerings.
+
 
 ## Setup
 
@@ -43,7 +43,10 @@ Follow these steps to get your application running within IntelliJ IDEA:
 - Intellij IDEA.
 
 ## Demo
-
+![Dealership-menu.JPG](imgs%2FDealership-menu.JPG)
+![List-all-vehicles.JPG](imgs%2FList-all-vehicles.JPG)
+![Filtered-by-price.JPG](imgs%2FFiltered-by-price.JPG)
+![Added new vehicle.JPG](imgs%2FAdded%20new%20vehicle.JPG)
 ## Future Work
 
 Outline potential future enhancements or functionalities you might consider adding:
