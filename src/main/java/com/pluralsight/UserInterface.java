@@ -153,10 +153,48 @@ public class UserInterface {
     }
 
     public void processAddVehicleRequest() {
+        System.out.print("Enter VIN: ");
+        int vin = Integer.parseInt(scanner.nextLine());
+        System.out.print("Enter Year: ");
+        int year = Integer.parseInt(scanner.nextLine());
+        System.out.print("Enter Make: ");
+        String make = scanner.nextLine();
+        System.out.print("Enter Model: ");
+        String model = scanner.nextLine();
+        System.out.print("Enter Vehicle Type: ");
+        String vehicleType = scanner.nextLine();
+        System.out.print("Enter Color: ");
+        String color = scanner.nextLine();
+        System.out.print("Enter Odometer Reading: ");
+        int odometer = Integer.parseInt(scanner.nextLine());
+        System.out.print("Enter Price: ");
+        double price = Double.parseDouble(scanner.nextLine());
+
+        Vehicle newVehicle = new Vehicle(vin, year, make, model, vehicleType, color, odometer, price);
+        dealership.addVehicle(newVehicle);
+        System.out.println("Vehicle added successfully.");
+
 
     }
 
     public void processRemoveVehicleRequest() {
+        System.out.print("Enter VIN of the vehicle to remove: ");
+        int vin = Integer.parseInt(scanner.nextLine());
+
+        Vehicle vehicleToRemove = null;
+        for (Vehicle vehicle : dealership.getAllVehicles()) {
+            if (vehicle.getVin() == vin) {
+                vehicleToRemove = vehicle;
+                break;
+            }
+        }
+
+        if (vehicleToRemove != null) {
+            dealership.removeVehicle(vehicleToRemove);
+            System.out.println("Vehicle removed successfully.");
+        } else {
+            System.out.println("Vehicle with VIN " + vin + " not found.");
+        }
+    }
 
     }
-}
