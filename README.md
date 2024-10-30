@@ -11,8 +11,12 @@ from a dealership.csv file.
 
 
 ## User Stories
+- As a user, I want to view the list of available vehicles so that I can find the car that meets my needs.
 
+- As a user, I want to filter vehicles by price, make, or model so that I can easily find options that fit my budget and preferences.
 
+As a user, I want to add new vehicles to the inventory so that I can keep the dealership up to date with the latest offerings.
+- 
 
 ## Setup
 
